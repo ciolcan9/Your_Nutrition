@@ -1,0 +1,324 @@
+html {
+    font-size: 17px;
+    transition: all 500ms linear;
+}
+
+body {
+    --Verde-deschis: #A8D5BA;
+    --Verde: rgb(107, 175, 146);
+    --Verde-întunecat: rgb(62, 116, 111);
+    --Galben-cald: #f5e661;
+    --Alb-crem: #F7F6F2;
+    --cl-text: black;
+    --latime-spatiere: 100px;
+    --background-imagine-body: url("../Imagini/fundal.jpg");
+    background-image: linear-gradient(transparent, transparent 15%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.9) 60%, transparent 85%, transparent), var(--background-imagine-body);
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: var(--Verde-deschis);
+    background-position: center;
+    padding-left: var(--latime-spatiere);
+    padding-right: var(--latime-spatiere);
+
+}
+
+.c1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+main {
+    --latime-spatiere: 40px;
+    padding-left: var(--latime-spatiere);
+    padding-right: var(--latime-spatiere);
+}
+
+#grid-pagina>* {
+    outline: 2px solid #A8D5BA;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-wrap: wrap;
+}
+
+#grid-pagina {
+    display: grid;
+    grid-template-areas: "z-Introducere z-Introducere z-Introducere"
+        "z-Avantajele z-Avantajele  z-Oferte"
+        "z-r3 z-Recenzii z-Recenzii"
+        "z-r1 z-Recenzii z-Recenzii"
+        "z-r2 z-Orar z-Orar"
+        "z-index-FAQ z-index-FAQ z-index-FAQ";
+    gap: 0px;
+    row-gap: 10px;
+}
+
+
+#Introducere {
+    grid-area: z-Introducere;
+    background-color: rgba(62, 116, 111, 0.2);
+}
+
+#Introducere:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#Oferte {
+    grid-area: z-Oferte;
+    background-color: rgba(62, 116, 111, 0.2);
+}
+
+#Oferte:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#Avantajele {
+    grid-area: z-Avantajele;
+    background-color: rgba(62, 116, 111, 0.2);
+}
+
+#Avantajele:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#Recenzii {
+    grid-area: z-Recenzii;
+    background-color: rgba(62, 116, 111, 0.2);
+}
+
+#Recenzii:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#r1 {
+    grid-area: z-r1;
+    background-color: rgba(62, 116, 111, 0.2);
+}
+
+#r2 {
+    grid-area: z-r2;
+    background-color: rgba(62, 116, 111, 0.2);
+}
+
+#r3 {
+    grid-area: z-r3;
+    background-color: rgba(62, 116, 111, 0.2);
+}
+
+#Orar {
+    grid-area: z-Orar;
+    background-color: rgba(62, 116, 111, 0.2);
+}
+
+#Orar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#FAQ {
+    grid-area: z-index-FAQ;
+    background-color: rgba(62, 116, 111, 0.2);
+}
+
+#FAQ:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.fg-img img {
+    width: 70%;
+}
+
+.rating {
+    display: inline-flex;
+    gap: 5px;
+}
+
+.rating i {
+    color: gold;
+    font-size: 1.5em;
+}
+
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table th,
+table td {
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+table th {
+    font-weight: bold;
+}
+
+
+#Planuri-Nutritionale {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(107, 175, 146, 0.1);
+    margin: 20px auto;
+}
+
+.planuri-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plan {
+    background-color: rgba(62, 116, 111, 0.2);
+    border: 2px solid #A8D5BA;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.plan h3 {
+    color: #3E746F;
+    margin-bottom: 10px;
+}
+
+.plan ul {
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.plan ul li {
+    margin-bottom: 5px;
+}
+
+#Retete-Sanatoase {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(230, 207, 8, 0.1);
+    margin: 20px auto;
+}
+
+.retete-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.reteta {
+    background-color: rgba(107, 175, 146, 0.1);
+    border: 2px solid #A8D5BA;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reteta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.reteta h3 {
+    color: rgb(62, 116, 111);
+    margin-bottom: 10px;
+}
+
+.reteta ul {
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.reteta ul li {
+    margin-bottom: 5px;
+}
+
+.reteta img {
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: rgba(62, 116, 111, 0.2);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#hamburger {
+    display: inline-block;
+}
+
+.meniu {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: none;
+}
+
+.meniu li {
+    padding: 10px;
+    background-color: rgba(62, 116, 111, 0.5);
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.meniu li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+#ch-menu:checked+.meniu {
+    display: block;
+
+}
+
+#data-ora {
+    font-size: 1.5em;
+    color: #3E746F;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+#tabel-relevant {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#tabel-relevant th,
+#tabel-relevant td {
+    border: 1px solid rgb(62, 116, 111);
+    padding: 10px;
+}
+
+#tabel-relevant th {
+    background-color: (62, 116, 111, 0.2);
+    color: #030000;
+}
